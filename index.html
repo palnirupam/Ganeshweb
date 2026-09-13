@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100d0b">
+  <meta name="description" content="A little stillness. A thousand lights. Experience Ganesh taking shape in a handcrafted, interactive celebration of new beginnings.">
+  <title>AARAMBH — Where light becomes divine</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="presentation.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="page-atmosphere" aria-hidden="true"></div>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Aarambh home">
+        <svg class="brand-symbol" viewBox="0 0 40 48" fill="none" aria-hidden="true"><path d="M20 5v5m-8 2 8-5 8 5M11 16c-14-8-11 18 2 13m16-13c14-8 11 18-2 13M13 15c2-5 12-5 14 0 3 7-5 13-4 18 2 7-9 9-9 2 0-3 4-4 5-1M15 21l3 1m7-1-3 1"/><circle cx="20" cy="16" r="1"/></svg>
+        <span class="brand-wordmark">AARAMBH<span>A NEW BEGINNING</span></span>
+      </a>
+      <nav class="header-actions" aria-label="Experience controls">
+        <button class="portrait-button text-button" id="portrait-button" aria-pressed="false">Reel view</button>
+        <button class="intention-button text-button" id="intention-button">The intention <span aria-hidden="true">↗</span></button>
+        <span class="nav-divider" aria-hidden="true"></span>
+        <button class="sound-button text-button" id="sound-button" aria-pressed="true" aria-label="Turn music off">
+          <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <span id="sound-label">Music on</span>
+        </button>
+      </nav>
+    </header>
+
+    <main class="experience" id="experience">
+      <section class="intro" aria-labelledby="headline">
+        <div class="eyebrow"><span class="tiny-sun" aria-hidden="true">✳</span> A MOMENT OF WONDER</div>
+        <h1 id="headline">Where light<br>becomes <br><em>divine.</em></h1>
+        <p class="intro-copy">Some beginnings aren't made. <br>They are felt. One spark at a time.</p>
+        <div class="invitation">
+          <button class="awaken-button" id="awaken-button">
+            <svg id="button-star" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2c0 7-3 10-10 10 7 0 10 3 10 10 0-7 3-10 10-10-7 0-10-3-10-10Z"/><path d="m4 4 3 3m10 10 3 3M4 20l3-3M17 7l3-3"/></svg>
+            <span id="awaken-label">Bappa ke jagao</span>
+            <span class="button-arrow" aria-hidden="true">↗</span>
+          </button>
+          <p class="button-note" id="button-note">Ekta sparsho. Gaan ar aloy ek notun shuru.</p>
+        </div>
+        <div class="intro-footnote"><span class="fine-line" aria-hidden="true"></span><p>Leave the world a little behind.<br>Stay for the feeling.</p></div>
+      </section>
+
+      <section class="art-section" aria-label="Interactive Ganesh light experience">
+        <div class="reel-heading" aria-hidden="true"><span>A A R A M B H</span><p>A divine <em>beginning.</em></p><i></i></div>
+        <div class="art-topline"><span class="edition">THE LIGHT WITHIN</span><span class="edition-number">EST. IN ETERNITY</span></div>
+        <div class="art-stage" id="art-stage" data-state="idle">
+          <div class="aura" aria-hidden="true"></div>
+          <div class="reveal-bloom" aria-hidden="true"></div>
+          <svg id="sacred-art" class="sacred-art" viewBox="0 0 640 700" fill="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="gold" x1="190" y1="140" x2="440" y2="570" gradientUnits="userSpaceOnUse"><stop stop-color="#a7773d"/><stop offset=".25" stop-color="#f1d7a2"/><stop offset=".48" stop-color="#d8ae66"/><stop offset=".7" stop-color="#e8c78b"/><stop offset="1" stop-color="#a6753f"/></linearGradient>
+              <radialGradient id="body-wash"><stop stop-color="#d8ae66" stop-opacity=".055"/><stop offset="1" stop-color="#d8ae66" stop-opacity="0"/></radialGradient>
+              <linearGradient id="sculpture-bronze" x1="175" y1="250" x2="410" y2="415" gradientUnits="userSpaceOnUse"><stop stop-color="#46301e" stop-opacity=".66"/><stop offset=".35" stop-color="#302116" stop-opacity=".32"/><stop offset=".7" stop-color="#1b1510" stop-opacity=".52"/><stop offset="1" stop-color="#6e4b29" stop-opacity=".38"/></linearGradient>
+              <linearGradient id="crown-bronze" x1="270" y1="140" x2="322" y2="233" gradientUnits="userSpaceOnUse"><stop stop-color="#d8ae66" stop-opacity=".16"/><stop offset=".5" stop-color="#302116" stop-opacity=".28"/><stop offset="1" stop-color="#d8ae66" stop-opacity=".13"/></linearGradient>
+              <linearGradient id="lotus-bronze" x1="300" y1="540" x2="300" y2="577" gradientUnits="userSpaceOnUse"><stop stop-color="#c65c35" stop-opacity=".12"/><stop offset="1" stop-color="#d8ae66" stop-opacity=".025"/></linearGradient>
+              <mask id="figure-clearance" maskUnits="userSpaceOnUse" x="0" y="0" width="640" height="700">
+                <rect width="640" height="700" fill="white"/>
+                <g transform="translate(20 5)" fill="black" stroke="black" stroke-width="12" stroke-linejoin="round">
+                  <path d="M251 236L255 188 278 157 300 97 322 157 345 188 349 236 344 253C382 225 406 234 443 222C435 245 457 263 449 302C445 329 421 349 379 351L356 354C380 359 390 378 386 406C412 377 436 394 430 411L385 460C407 446 438 451 449 473C464 503 416 529 368 531L416 552 300 575 184 552 232 531C184 529 136 503 151 473C162 451 193 446 215 460L210 430C173 427 172 385 207 377L198 328 201 303 222 284 242 294 245 320 221 351C179 349 155 329 151 302C143 263 165 245 157 222C194 234 218 225 256 253Z"/>
+                </g>
+              </mask>
+              <mask id="hand-clearance" maskUnits="userSpaceOnUse" x="130" y="200" width="340" height="270">
+                <rect x="130" y="200" width="340" height="270" fill="white"/>
+                <path d="M219 367C202 353 196 344 198 328L201 303Q202 296 207 301L209 321L211 290Q212 282 217 288L219 319L222 286Q225 280 228 287L230 320L234 295Q237 289 240 295L238 332Q250 317 253 324C256 329 246 339 243 351L230 377Z" fill="black" stroke="black" stroke-width="5" stroke-linejoin="round"/>
+              </mask>
+              <linearGradient id="seed-gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fbe2af"/><stop offset="1" stop-color="#ba773e"/></linearGradient>
+              <filter id="gold-glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="2.1" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+            </defs>
+            <g class="orbit-system" stroke="#b88c50" stroke-width=".65" mask="url(#figure-clearance)">
+              <g id="orbit-ring">
+              <circle cx="320" cy="340" r="268" class="outer-orbit"/>
+              <circle cx="320" cy="340" r="252" stroke-dasharray="1 11" class="dotted-orbit"/>
+              <circle cx="320" cy="340" r="225" class="inner-orbit"/>
+              <path d="M320 60v18M320 602v18M40 340h18M582 340h18" class="orbit-ticks"/>
+              <g id="orbit-markings"></g>
+              </g>
+            </g>
+            <g id="mandala-depth" mask="url(#figure-clearance)"><g id="mandala" class="mandala" transform="translate(320 330)" stroke="#bb8845" stroke-width=".65"></g></g>
+            <g class="orbit-stars" fill="#d5ab6a"><path d="m320 67 3 6-3 6-3-6ZM584 337l6 3-6 3-6-3ZM56 337l6 3-6 3-6-3ZM320 601l3 6-3 6-3-6Z"/><circle cx="132" cy="150" r="2"/><circle cx="510" cy="530" r="2"/></g>
+            <g class="seed" id="seed" transform="translate(320 328)">
+              <circle class="seed-orbit" r="68" stroke="#be9054" stroke-width=".65" stroke-dasharray="1 7"/>
+              <g class="seed-petals" stroke="url(#seed-gold)" stroke-width="1.05"><path d="M0-43C17-25 17-9 0 0c-17-9-17-25 0-43ZM43 0C25 17 9 17 0 0c9-17 25-17 43 0ZM0 43C-17 25-17 9 0 0c17 9 17 25 0 43ZM-43 0C-25-17-9-17 0 0c-9 17-25 17-43 0Z"/><path d="M0-29C5-5 5-5 29 0 5 5 5 5 0 29-5 5-5 5-29 0-5-5-5-5 0-29Z" stroke-opacity=".45"/></g>
+              <circle r="4" fill="#ffe2a7" filter="url(#gold-glow)"/>
+              <circle r="12" stroke="#ffe2a7" stroke-opacity=".25"/>
+            </g>
+            <g id="ganesha" transform="translate(20 5)" stroke="url(#gold)" stroke-width="2.15" stroke-linecap="round" stroke-linejoin="round">
+              <ellipse class="deity-wash" cx="300" cy="355" rx="162" ry="210" fill="url(#body-wash)" stroke="none"/>
+              <g id="deity-surfaces" class="deity-wash" stroke="none">
+                <path class="volume-region" fill="url(#crown-bronze)" d="M251 218L256 208C253 177 269 167 278 159L300 127 322 159C331 167 347 177 344 208L349 218 343 236Q300 224 257 236Z"/>
+                <path class="volume-region" fill="url(#sculpture-bronze)" d="M256 253C218 225 194 234 157 222C165 245 143 263 151 302C155 329 179 349 221 351L245 320 246 282Z"/>
+                <path class="volume-region" fill="url(#sculpture-bronze)" d="M344 253C382 225 406 234 443 222C435 245 457 263 449 302C445 329 421 349 379 351L354 319 353 280Z"/>
+                <path class="volume-region" fill="url(#sculpture-bronze)" d="M264 235Q300 225 336 235C354 253 361 280 353 309C349 325 339 336 335 354Q308 373 272 353C264 337 250 325 246 305C240 277 246 251 264 235Z"/>
+                <path class="volume-region" fill="url(#sculpture-bronze)" d="M242 350Q300 375 359 351C380 359 390 378 386 406L383 411C398 439 391 474 368 491C334 515 267 515 234 490C208 470 203 425 217 397C213 376 226 356 242 350Z"/>
+                <path class="volume-region" fill="url(#sculpture-bronze)" d="M276 325C285 346 286 365 284 388C281 409 260 422 266 439C271 456 303 464 328 450Q299 452 287 439C268 418 290 391 316 402Q338 422 313 436C329 436 340 424 340 411C338 388 327 376 335 354Z"/>
+                <path class="volume-region" fill="url(#sculpture-bronze)" d="M215 460C193 446 162 451 151 473C136 503 184 529 232 531L280 535Q300 543 320 535L368 531C416 529 464 503 449 473C438 451 407 446 385 460L368 491Q300 527 234 490Z"/>
+                <path class="volume-region" fill="url(#lotus-bronze)" d="M163 543Q181 541 195 548L184 541Q210 536 232 550L221 542Q247 538 273 554L265 539Q287 538 300 550Q313 538 335 539L327 554Q353 538 379 542L368 550Q390 536 416 541L405 548Q419 541 437 543C422 565 363 578 300 573C237 578 178 565 163 543Z"/>
+              </g>
+              <g id="crown-lines" data-start="2.3" data-duration="1.7">
+                <path d="M251 218Q300 199 349 218L343 236Q300 224 257 236Z"/>
+                <path d="M256 208C253 177 269 167 278 159Q281 185 300 192Q319 185 322 159C331 167 347 177 344 208"/>
+                <path d="M273 185Q282 151 300 127Q318 151 327 185" stroke-width="2.6"/>
+                <path d="M287 163Q300 170 313 163M284 174Q300 183 316 174" stroke-width="1.2"/>
+                <path d="M300 126C280 116 291 105 300 98C309 105 320 116 300 126Z"/>
+                <path d="M300 98v-2m-3-4 3-4 3 4-3 4Z" stroke-width="1.2"/>
+                <path d="m291 215 9-9 9 9-9 10Z" stroke-width="1.5"/>
+                <path d="m268 219 4-5 4 4-4 5Zm56-1 4-4 4 5-4 4Z" stroke-width="1"/>
+                <path d="M262 204Q278 196 289 203M311 203Q322 196 338 204M262 229Q276 224 287 225M313 225Q327 224 338 229" stroke-width=".75"/>
+                <path d="M263 195Q267 187 270 184M280 196l-6-6m46 6 6-6m11 5q-4-8-7-11M288 150l4 7m20-7-4 7M298 180l2 5 2-5" stroke-width=".9"/>
+                <path d="M264 234v6m12-8v5m12-7v5m12-6v6m12-5v5m12-3v5m12-3v6" stroke-width="1.25"/>
+              </g>
+              <g id="ear-lines" data-start="2.7" data-duration="2" mask="url(#hand-clearance)">
+                <path d="M256 253C218 225 194 234 157 222C165 245 143 263 151 302C155 329 179 349 221 351L245 320"/>
+                <path d="M344 253C382 225 406 234 443 222C435 245 457 263 449 302C445 329 421 349 379 351L354 319"/>
+                <path d="M247 269C218 247 187 258 174 247C186 275 164 302 201 324Q220 334 231 328" stroke-width="1.15"/>
+                <path d="M353 269C382 247 413 258 426 247C414 275 436 302 399 324Q380 334 369 328" stroke-width="1.15"/>
+                <path d="M188 276Q215 273 240 291M412 276Q385 273 360 291" stroke-width=".9"/>
+                <path d="M212 347C199 365 223 373 231 354M388 347C401 365 377 373 369 354" stroke-width="1.5"/>
+                <path d="M166 241Q165 260 166 271M434 241Q435 260 434 271M160 292Q164 324 190 334M440 292Q436 324 410 334" stroke-width=".7"/>
+                <path d="M184 286Q197 282 211 286M416 286Q403 282 389 286M193 308Q205 318 216 316M407 308Q395 318 384 316" stroke-width=".8"/>
+                <path d="m215 365 3 6 3-6m158 0 3 6 3-6" stroke-width="1.2"/>
+              </g>
+              <g id="face-lines" data-start="3.2" data-duration="2.4" mask="url(#hand-clearance)">
+                <path d="M264 235C246 251 240 277 246 305C250 325 264 337 272 353"/>
+                <path d="M336 235C354 253 361 280 353 309C349 325 339 336 335 354C330 377 354 401 337 425C322 447 286 442 283 421C280 405 301 399 307 413C311 422 302 428 297 423" stroke-width="2.7"/>
+                <path d="M276 325C285 346 286 365 284 388C281 409 260 422 266 439C271 456 303 464 328 450" stroke-width="1.65"/>
+                <path d="M255 288Q269 279 281 289M319 289Q332 279 346 287" stroke-width="1.4"/>
+                <path d="M258 292Q268 302 279 293M321 293Q332 300 342 291" stroke-width="2"/>
+                <path d="M270 315Q263 337 256 339Q259 322 255 316M338 316Q344 336 352 338L348 325" stroke-width="1.5"/>
+                <path d="M295 249v16q5 9 10 0v-16M300 245v20" class="tilak" stroke="#c65c35" stroke-width="2.5"/>
+                <path d="M296 310q6 4 12 0M294 320q9 5 17 0M292 330q11 5 20 0" stroke-width="1"/>
+                <path d="M283 353q4 9 4 16M330 366q-3 14 2 24M272 429q-1 12 15 18" stroke-width=".65" stroke-opacity=".75"/>
+              </g>
+              <g id="body-lines" data-start="4.8" data-duration="2">
+                <path d="M242 350C226 356 213 376 215 404M359 351C380 359 390 378 386 406"/>
+                <path d="M217 397C203 425 208 470 234 490C267 515 334 515 368 491C391 474 398 439 383 411"/>
+                <path d="M242 356Q246 393 276 406M356 354Q353 375 338 391" stroke-width="1.25"/>
+                <path d="M238 363Q239 394 269 411M361 362Q358 384 343 399" stroke-width=".9"/>
+                <path d="M227 409Q235 438 251 449M363 419Q354 452 337 462" stroke-width="1.1"/>
+                <path d="M301 467c-11-7-14 10-4 11 6 0 8-7 4-11" stroke-width="1.2"/>
+                <path d="M230 481Q300 530 373 480M237 490Q302 537 365 491" stroke-width="1.2"/>
+                <path d="M264 502Q255 525 243 534M276 507l-10 31M285 512l-4 28M315 511l7 29M326 507l12 31M337 502q6 20 18 29" stroke-width=".9"/>
+                <path d="m241 377 5 1m-2 6 5 1m-1 6 5-1m0 7 5-2m2 6 4-3m92-14 5 1m-9 5 5 2m-9 5 5 2M244 497l3 4m7 0 2 5m8-1 2 5m72-6-2 5m10-8-2 5m10-9-3 4" stroke-width="1.45"/>
+                <path d="M242 455Q248 470 259 474M346 473q15-10 20-25" stroke-width=".65" stroke-opacity=".75"/>
+              </g>
+              <g id="hand-lines" data-start="5" data-duration="1.8">
+                <path class="palm-shape" d="M219 367C202 353 196 344 198 328L201 303Q202 296 207 301L209 321L211 290Q212 282 217 288L219 319L222 286Q225 280 228 287L230 320L234 295Q237 289 240 295L238 332Q250 317 253 324C256 329 246 339 243 351L230 377" stroke-width="1.8"/>
+                <path d="M209 332q14-13 24 2M218 338q7 7 12 0M214 354l21 8M214 359l19 8" stroke-width="1"/>
+                <path d="M210 379C181 376 173 403 186 422C193 432 202 435 210 430M382 378C404 368 419 393 412 411"/>
+                <path d="M386 420C407 434 423 420 430 406Q434 398 426 399L410 404M404 415l-16-2" stroke-width="1.8"/>
+                <path d="M397 395q15 17 33 0ZM404 394q2-13 10-19 3 12 10 19" stroke-width="1.4"/>
+                <path d="M185 393l17 8M184 399l15 8M399 389l13-5M402 395l13-5" stroke-width="1"/>
+                <path class="palm-accent" d="m220 332 2 3-2 3-2-3Z" stroke="#c65c35" stroke-width="1.2"/>
+                <path d="M215 367l15 7M187 401l10 7M407 398l8-3M414 383v8m-4-3 1 4m7-4 1 4" stroke-width=".6"/>
+              </g>
+              <g id="seat-lines" data-start="6.2" data-duration="1.5">
+                <path d="M215 460C193 446 162 451 151 473C136 503 184 529 232 531M385 460C407 446 438 451 449 473C464 503 416 529 368 531"/>
+                <path d="M167 471Q181 464 198 470M433 471Q419 464 402 470M161 480Q179 499 224 504M439 480Q421 499 376 504" stroke-width="1.2"/>
+                <path d="M232 514C210 510 192 521 205 531C224 545 265 532 280 535Q300 543 320 535C335 532 376 545 395 531C408 521 390 510 368 514"/>
+                <path d="m218 522-4 7m12-6-4 8m12-7-3 8m151-10 4 7m-12-6 4 8m-12-7 3 8" stroke-width=".9"/>
+              </g>
+              <g id="lotus-lines" data-start="7.3" data-duration="1.6" stroke-width="1.4">
+                <path d="M300 565C274 556 265 545 265 539Q287 538 300 550Q313 538 335 539C335 545 326 556 300 565Z"/>
+                <path d="M300 565C264 569 231 558 221 542Q247 538 273 554M300 565C336 569 369 558 379 542Q353 538 327 554"/>
+                <path d="M277 565C241 576 198 562 184 541Q210 536 232 550M323 565C359 576 402 562 416 541Q390 536 368 550"/>
+                <path d="M242 567C205 570 172 558 163 543Q181 541 195 548M358 567C395 570 428 558 437 543Q419 541 405 548"/>
+                <path d="M193 580Q300 591 407 580" stroke-width=".7"/>
+                <path d="M300 552v9M232 547q11 11 32 15m104-15q-11 11-32 15M194 546q13 14 33 17m179-17q-13 14-33 17" stroke-width=".6" stroke-opacity=".65"/>
+                <path d="M278 545q12 2 17 10m27-10q-12 2-17 10" stroke="#c65c35" stroke-width=".9" stroke-opacity=".65"/>
+              </g>
+            </g>
+          </svg>
+          <canvas id="light-canvas" aria-hidden="true"></canvas>
+          <button class="seed-hitarea" id="seed-button" aria-label="Awaken Bappa and begin the light reveal"></button>
+          <div class="seed-caption" id="seed-caption"><span>IT BEGINS WITH A SPARK</span><span class="seed-caption-line"></span></div>
+          <div class="blessing" id="blessing"><span class="blessing-sanskrit" lang="hi">॥ श्री गणेशाय नमः ॥</span><span>Ganpati Bappa Morya</span></div>
+          <span class="art-coordinate coordinate-left" aria-hidden="true">FAITH</span>
+          <span class="art-coordinate coordinate-right" aria-hidden="true">INFINITE</span>
+        </div>
+        <div class="art-bottomline">
+          <div class="scene-status"><span class="status-light" aria-hidden="true"></span><span id="scene-number">01</span><span class="status-divider">/</span><span id="scene-label">STILLNESS</span></div>
+          <div class="scene-controls"><button class="pause-button text-button" id="pause-button" aria-pressed="false" aria-label="Pause animation and music"><span id="pause-label">Pause</span></button><button class="skip-button text-button" id="skip-button" hidden>Skip <span aria-hidden="true">↗</span></button><button class="replay-button text-button" id="replay-button" hidden><span aria-hidden="true">↻</span> Feel it again</button><button class="fullscreen-button" id="fullscreen-button" aria-label="Enter fullscreen" title="Enter fullscreen"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M7 3H3v4m10-4h4v4M3 13v4h4m10-4v4h-4"/></svg></button></div>
+        </div>
+        <div class="progress-track" aria-hidden="true"><span id="progress-fill"></span></div>
+        <p class="reel-signature" aria-hidden="true">May every beginning be blessed.</p>
+      </section>
+      <p class="sr-only" id="experience-announcement" role="status" aria-live="polite"></p>
+    </main>
+
+    <footer class="site-footer"><span>A LITTLE STILLNESS. A LITTLE MAGIC.</span><span class="footer-center"><i></i> An ode to the remover of obstacles <i></i></span><span class="footer-note">Made of light & love <span aria-hidden="true">✧</span></span></footer>
+  </div>
+
+  <dialog id="intention-dialog" class="intention-dialog" aria-labelledby="intention-title">
+    <button class="dialog-close" id="dialog-close" aria-label="Close the intention">×</button>
+    <span class="eyebrow">THE INTENTION</span>
+    <span class="dialog-star" aria-hidden="true">✧</span>
+    <h2 id="intention-title">Every beginning<br>deserves a <em>little light.</em></h2>
+    <p>Aarambh means beginning. This is a small tribute to Ganesh, the remover of obstacles, and to the quiet courage it takes to begin again.</p>
+    <p>One touch sets the light in motion. Stay as it finds its form. Let this moment be yours.</p>
+    <span class="dialog-signoff">Shubho hok protita notun shuru.</span>
+  </dialog>
+  <noscript><div class="noscript-message">Ei alor experience dekhte browser e JavaScript on koro.</div></noscript>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "aarambh",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An interactive Ganesh reveal, drawn entirely with light.",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "check": "node --check app.js && node --check presentation.js && node --check server.js",
+    "render:reel": "node .checks/render-reel.cjs",
+    "test:browser": "node .checks/browser-check.cjs",
+    "test:server": "node .checks/port-check.cjs"
+  }
+}

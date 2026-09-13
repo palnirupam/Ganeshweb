@@ -1,0 +1,13 @@
+node_modules/
+.preview-profile/
+.checks/*
+!.checks/browser-check.cjs
+!.checks/port-check.cjs
+!.checks/render-reel.cjs
+exports/*
+!exports/aarambh-ganesha-slow-orbit.mp4
+!exports/aarambh-ganesha-slow-orbit-cover.jpg
+.env
+.env.*
+*.pem
+*.log
