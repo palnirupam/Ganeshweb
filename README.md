@@ -158,6 +158,10 @@ No build command is needed. `server.js` is for local preview. To use GitHub Page
 - **Typography:** Cormorant and Inter. Their SIL Open Font License files are included in `assets/`.
 - **Visuals:** SVG illustration and procedural light effects authored in the project source.
 
+## License
+
+The project source code is released under the [MIT License](LICENSE). The soundtrack remains the property of its creators, Ajay–Atul, and the bundled fonts are licensed under the SIL Open Font License — see the license files in `assets/`.
+
 <div align="center">
 
 *Ganpati Bappa Morya. May every beginning be blessed.*
