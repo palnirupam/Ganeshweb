@@ -30,11 +30,14 @@ const server = http.createServer((req, res) => {
   });
 });
 
+// Vercel's proxy can only reach servers bound to 0.0.0.0; keep localhost binding for dev.
+const host = process.env.VERCEL ? '0.0.0.0' : '127.0.0.1';
+
 server.on('error', (error) => {
   if (error.code === 'EADDRINUSE' && port < lastPort) {
     console.log(`Port ${port} is busy. Trying ${port + 1}...`);
     port += 1;
-    server.listen(port, '127.0.0.1');
+    server.listen(port, host);
     return;
   }
 
@@ -49,4 +52,4 @@ server.on('listening', () => {
   console.log(`AARAMBH is ready at http://localhost:${server.address().port}`);
 });
 
-server.listen(port, '127.0.0.1');
+server.listen(port, host);
